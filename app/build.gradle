@@ -4,19 +4,27 @@ plugins {
     id 'kotlinx-serialization'
 }
 
+
+
 android {
     compileSdkVersion 30
-//    buildToolsVersion "32.0.0"
+    buildToolsVersion "30.0.2"
+
+
 
     defaultConfig {
-        applicationId "com.example.myts"
+        applicationId "com.example.touristsights"
         minSdkVersion 23
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
 
+
+
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+
+
 
     buildTypes {
         release {
@@ -31,10 +39,12 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    buildFeatures{
-        viewBinding true
+    buildFeatures {
+        viewBinding = true
     }
 }
+
+
 
 dependencies {
     implementation "org.jetbrains.kotlinx:kotlinx-serialization-runtime:0.20.0"
